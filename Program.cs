@@ -14,7 +14,7 @@ class Program
             Console.WriteLine("3. Exit");
             Console.WriteLine("Choose option");
 
-            string choice = Console.ReadLine();
+            string choice = Console.ReadLine()??"";
             switch(choice)
             {
                 case "1":
@@ -41,7 +41,7 @@ class Program
     static void AddAsset()
     {
         Console.Write("Enter Asset name: ");
-        string assetName = Console.ReadLine();
+        string assetName = Console.ReadLine()??"";
 
         assets.Add(assetName);
 
